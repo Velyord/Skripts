@@ -27,4 +27,9 @@ Personal Utils represented as skripts or text files
             </li>
           </ol>
     </details>
+    <details>
+        <summary>Auto PDF Uploader To Wordpress</summary>
+          Used app: SikuliX-2.0.5
+          Uploads PDF into a plugin, then imports the PDF into an elementor gadget and repeats.
+      </details>
 </details>
