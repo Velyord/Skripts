@@ -44,8 +44,7 @@ Personal Utils represented as skripts or text files
         Here i test the program with a german stock for water transportation of containers.
         It has for the past 5 years: 11.97% revenue growth, 45.29% gross margin, 31.33% operationg margin, 30.35% net margin, 9.22 P/E and -35% price.
         The program decided that it has a score of 3.13 which is between "worthy" and "unicorn".
-        I invested €100 in it for testing purposes and ended up with 30% profit for one month.
-        This is not an investing advice.<br><br>
+        I invested €100 in it's decision for testing purposes and ended up with 30% profit after one month (not an investing advice).<br><br>
       <img src="https://i.imgur.com/KPvqp9F.png">
       <img src="https://i.imgur.com/3fT0ozF.png">
       <img src="https://i.imgur.com/eeFJViK.png">
