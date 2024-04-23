@@ -39,7 +39,7 @@ Personal Utils represented as skripts or text files
         The inputs include metrics such as revenue growth, gross profit margin, and P/E ratio, each divided into linguistic terms like "negative," "average," and "high." 
         The output, "Type of Investment," provides linguistic categories such as "avoid," "risky," "worthy," and "unicorn" based on the inputs' fuzzy logic analysis. 
         The system's rules govern the mapping between input combinations and output categories, enabling nuanced investment recommendations.
-        ![Investing_Decisions_Maker](https://i.imgur.com/CKYVzbb.png)
+        <img src="https://i.imgur.com/CKYVzbb.png">
         Here i test the program with a german stock for water transportation of containers.
         It has for the past 5 years: 11.97% revenue growth, 45.29% gross margin, 31.33% operationg margin, 30.35% net margin, 9.22 P/E and -35% price.
         The program decided that it has a score of 3.13 which is between "worthy" and "unicorn".
