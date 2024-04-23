@@ -1,0 +1,108 @@
+[System]
+Name='ValueSeeking'
+Type='mamdani'
+Version=2.0
+NumInputs=6
+NumOutputs=1
+NumRules=30
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='sum'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Revenue__Growth__4YA'
+Range=[-100 100]
+NumMFs=4
+MF1='negative':'trapmf',[-100 -100 0 0]
+MF2='slow__0-15':'trapmf',[0.01 0.01 14.99 14.99]
+MF3='fast__15-25':'trapmf',[15 15 24.99 24.99]
+MF4='rapid':'trapmf',[25 25 100 100]
+
+[Input2]
+Name='Gross__Profit__Margin'
+Range=[-100 100]
+NumMFs=4
+MF1='negative':'trapmf',[-100 -100 0 0]
+MF2='average__0-20':'trapmf',[0.01 0.01 19.99 19.99]
+MF3='high__20-40':'trapmf',[20 20 39.99 39.99]
+MF4='exeptional':'trapmf',[40 40 100 100]
+
+[Input3]
+Name='Operating__Income__Margin'
+Range=[-100 100]
+NumMFs=4
+MF1='negative':'trapmf',[-100 -100 0 0]
+MF2='high':'trapmf',[15 15 100 100]
+MF3='good__10-15':'trapmf',[10 10 14.99 14.99]
+MF4='low__0-10':'trapmf',[0.01 0.01 9.99 9.99]
+
+[Input4]
+Name='Net__Profit__Margin'
+Range=[-100 100]
+NumMFs=4
+MF1='negative':'trapmf',[-100 -100 0 0]
+MF2='healthy__10-20':'trapmf',[10 10 19.99 19.99]
+MF3='high':'trapmf',[20 20 100 100]
+MF4='low__0-10':'trapmf',[0.01 0.01 9.99 9.99]
+
+[Input5]
+Name='P/E__Ratio'
+Range=[-100 100]
+NumMFs=5
+MF1='negative':'trapmf',[-100 -100 0 0]
+MF2='undervalued__0-15':'trapmf',[0.01 0.01 15 15]
+MF3='too__high':'trapmf',[40 40 100 100]
+MF4='average__15-25':'trapmf',[15.01 15.01 25 25]
+MF5='high__25-40':'trapmf',[25.01 25.01 39.99 39.99]
+
+[Input6]
+Name='Current__Price__compared__to__5YA'
+Range=[-100 100]
+NumMFs=4
+MF1='cheap':'trapmf',[-100 -100 -30 -30]
+MF2='bargain__-30--15':'trapmf',[-29.99 -29.99 -15 -15]
+MF3='low__margin__of__safety__-15-0':'trapmf',[-14.99 -14.99 0 0]
+MF4='expensive':'trapmf',[0.01 0.01 100 100]
+
+[Output1]
+Name='Type__of__Investment'
+Range=[0 4]
+NumMFs=4
+MF1='avoid':'trapmf',[0 0 1 1.5]
+MF2='risky':'trapmf',[1 1.5 2 2.5]
+MF3='worthy':'trapmf',[2 2.5 3 3.5]
+MF4='unicorn':'trapmf',[3 3.5 4 4]
+
+[Rules]
+1 0 0 0 0 0, 1 (0.16667) : 1
+2 0 0 0 0 0, 2 (0.16667) : 1
+3 0 0 0 0 0, 3 (0.16667) : 1
+4 0 0 0 0 0, 4 (0.16667) : 1
+0 1 0 0 0 0, 1 (0.16667) : 1
+0 2 0 0 0 0, 2 (0.16667) : 1
+0 3 0 0 0 0, 3 (0.16667) : 1
+0 4 0 0 0 0, 4 (0.16667) : 1
+0 0 1 0 0 0, 1 (0.16667) : 1
+0 0 4 0 0 0, 2 (0.16667) : 1
+0 0 3 0 0 0, 3 (0.16667) : 1
+0 0 2 0 0 0, 4 (0.16667) : 1
+0 0 0 1 0 0, 1 (0.16667) : 1
+0 0 0 4 0 0, 2 (0.16667) : 1
+0 0 0 2 0 0, 3 (0.16667) : 1
+0 0 0 3 0 0, 4 (0.16667) : 1
+0 0 0 0 1 0, 1 (0.16667) : 1
+0 0 0 0 3 0, 1 (0.16667) : 1
+0 0 0 0 5 0, 2 (0.16667) : 1
+0 0 0 0 4 0, 3 (0.16667) : 1
+0 0 0 0 2 0, 4 (0.16667) : 1
+0 0 0 0 0 4, 1 (0.16667) : 1
+0 0 0 0 0 3, 2 (0.16667) : 1
+0 0 0 0 0 2, 3 (0.16667) : 1
+0 0 0 0 0 1, 4 (0.16667) : 1
+4 4 2 3 2 4, 2 (0.16667) : 1
+3 3 3 2 4 4, 1 (0.16667) : 1
+2 2 4 4 5 4, 1 (0.16667) : 1
+2 2 4 4 4 1, 3 (0.16667) : 1
+4 4 2 3 5 0, 3 (0.16667) : 1
