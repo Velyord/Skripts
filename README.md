@@ -31,5 +31,13 @@ Personal Utils represented as skripts or text files
         <summary>Auto PDF Uploader To Wordpress</summary>
           Used app: SikuliX-2.0.5
           Uploads PDF into a plugin, then imports the PDF into an elementor gadget and repeats.
-      </details>
+    </details>
+    <details>
+      <summary>Investing Decisions Maker</summary>
+        A Mamdani type fuzzy logic system named with six inputs and one output. 
+        It's designed to assist in investment decision-making based on various financial indicators. 
+        The inputs include metrics such as revenue growth, gross profit margin, and P/E ratio, each divided into linguistic terms like "negative," "average," and "high." 
+        The output, "Type of Investment," provides linguistic categories such as "avoid," "risky," "worthy," and "unicorn" based on the inputs' fuzzy logic analysis. 
+        The system's rules govern the mapping between input combinations and output categories, enabling nuanced investment recommendations.
+    </details>
 </details>
