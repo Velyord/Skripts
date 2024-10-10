@@ -61,7 +61,7 @@ Personal Utils represented as skripts or text files. As well as automation scrip
             <li>number of folders;</li>
             <li>number of files in folders</li>
             <li>number of dates to be replaced</li>
-            <li>are there files or folders that need to be skipped</li><br>
+            <li>are there files or folders that need to be skipped</li>
           </ul>
           The bot:<br>          
           <ul>
