@@ -1,0 +1,66 @@
+import datetime
+
+# настройки________________________________________________
+glavnaPapka = "C:/Users/yoanv/Documents/GitHub/Automation/folder"
+broiPapkiZaObrabotka = 3
+broiFailoveZaObrabotkaVPapka = 3
+broiZamestvaniqNaGodini = 2
+propuskaSePurviqtElement = "da" # "da" или "ne"
+nomerNaFail = 0
+#__________________________________________________________
+
+true = False
+tekushtaGodina = datetime.datetime.now().year
+Settings.AutoDetectKeyboardLayout = True
+
+def replaceAndSave():
+    global nomerNaFail
+    type(Key.ENTER); wait("1719385066565.png", 60)
+    wait(0.1); type("h", KeyModifier.CTRL); wait("1728484510737.png", 60)
+    wait(0.1); click("1719402040398.png")
+    wait(0.1); wait("1719402069856.png", 60)
+    wait(0.1); click("1719402069856.png")
+    wait(0.1); click(Pattern("1719402175698.png").similar(0.66))
+    for i in range(broiZamestvaniqNaGodini):
+        wait(0.1); paste("([!0-9])"+str(tekushtaGodina-i-1)+"([!0-9])")
+        wait(0.1); type(Key.TAB)
+        wait(0.1); paste("\\1"+str(tekushtaGodina-i)+"\\2")
+        click(Pattern("1718712847669.png").similar(0.50)); wait("1728475077492.png", 60); 
+        wait(0.1); type(Key.ENTER); wait("1728475116557.png", 60)
+    wait(0.1); click("1728475150821.png")
+    wait(0.1); type("s", KeyModifier.CTRL); wait(1)
+    #wait(0.1); type(Key.F12, KeyModifier.SHIFT); wait(1)
+    wait(0.1); type("p", KeyModifier.CTRL); wait("1728475351403.png", 60)
+    wait(0.1); type(Key.ENTER); wait(1)
+    wait(0.1); type("file_")
+    nomerNaFail += 1
+    wait(0.1); type(str(nomerNaFail))
+    wait(0.1); type(Key.ENTER); wait(1)
+    wait(0.1); click(Pattern("1728475398518.png").targetOffset(42,-1))
+    wait(0.1); wait("1728474921259.png", 60)
+    #wait(0.1); type(Key.UP)
+    wait(0.1); type(Key.DOWN)
+
+def main():
+    type("d", KeyModifier.WIN); wait(1)
+    type("e", KeyModifier.WIN);
+    wait(0.1); wait("1728474921259.png", 60); wait(1)
+    wait(0.1); type("d", KeyModifier.ALT); paste(glavnaPapka); 
+    if true:
+        type('c', KeyModifier.ALT + KeyModifier.SHIFT)
+    wait(0.1); type(Key.ENTER); wait(1)
+
+    for i in range(broiPapkiZaObrabotka):
+        type(Key.DOWN); type(Key.ENTER); wait(1)
+        type(Key.DOWN)
+        if propuskaSePurviqtElement == "ne":
+            type(Key.UP)
+        for i in range(broiFailoveZaObrabotkaVPapka):
+            replaceAndSave()
+        type(Key.UP, KeyModifier.ALT); wait(1);
+        type("x", KeyModifier.CTRL); wait(0.1);
+        type(Key.UP); type(Key.ENTER); wait(1);
+        type("v", KeyModifier.CTRL); wait(1);
+        type(Key.UP, KeyModifier.ALT); wait(1);
+
+main()
