@@ -26,23 +26,42 @@ Personal Utils represented as skripts or text files. As well as automation scrip
               Lay back and relax while the automat do it's job. He will send you a notification on your phone when he is ready.
             </li>
           </ol>
+          The bot:<br>
+          Opens the Chrome browser and configures its settings for downloading,<br>
+          Logs into the software,<br>
+          Navigates to the database,<br>
+          Sets the desired year,<br>
+          Sets the desired month,<br>
+          Downloads the data for the selected month and sets it to the next month,<br>
+          Repeats the process for each remaining year until all the data is donwloaded.<br>
+          Alerts the user by logging into the bot's Facebook account and sending a message indicating that the database for the current doctor or dentist has been successfully downloaded. 
+
     </details>
     <details>
         <summary>Auto PDF Uploader To Wordpress</summary>
-          Uploads PDF into a plugin, then imports the PDF into an elementor gadget and repeats.
+          Uploads PDF into a plugin, then imports the PDF into an elementor gadget and repeats.<br>
+          the bot:<br>
+          Opens the Chrome browser,<br>
+          Logs into the website,<br>
+          Navigates to the plugin "PDF Poster",<br>
+          Moves the first PDF file in a designated "done" folder,<br>
+          Uploads the file,
+          <br>Visits the specific location on the site,
+          <br>Accesses Elementor and places the PDF in the desired position,
+          <br>Repeats the process for each remaining PDF until they are all uploaded.
     </details>
     <details>
         <summary>Automat for Rewriting Documents</summary>
-          set:
-          folder; number of folders; number of files in folders; number of dates to be replaced; are there files or folders that need to be skipped;
-          <br>the bot:
-          Opens the folder,
-          Opens the document,
-          Updates the years
-          (without changing other numeric non-year values),
-          Saves and prints the file,
-          Moves the completed folder in a designated "done" folder,
-          Repeats until pre-set settings are satisfied.    
+          set:<br>
+          folder; number of folders; number of files in folders; number of dates to be replaced; are there files or folders that need to be skipped;<br>
+          <br>the bot:<br>
+          Opens the folder,<br>
+          Opens the document,<br>
+          Updates the years<br>
+          (without changing other numeric non-year values),<br>
+          Saves and prints the file,<br>
+          Moves the completed folder in a designated "done" folder,<br>
+          Repeats until pre-set settings are satisfied.<br>
     </details>
     <details>
       <summary>Investing Decisions Maker</summary>
