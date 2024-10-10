@@ -1,4 +1,4 @@
-Personal Utils represented as skripts or text files
+Personal Utils represented as skripts or text files. As well as automation scripts.
 
 <details>
   <summary><h3>READMEs:</h3></summary>
@@ -29,8 +29,20 @@ Personal Utils represented as skripts or text files
     </details>
     <details>
         <summary>Auto PDF Uploader To Wordpress</summary>
-          Used app: SikuliX-2.0.5
           Uploads PDF into a plugin, then imports the PDF into an elementor gadget and repeats.
+    </details>
+    <details>
+        <summary>Automat for Rewriting Documents</summary>
+          set:
+          folder; number of folders; number of files in folders; number of dates to be replaced; are there files or folders that need to be skipped;
+          <br>the bot:
+          Opens the folder,
+          Opens the document,
+          Updates the years
+          (without changing other numeric non-year values),
+          Saves and prints the file,
+          Moves the completed folder in a designated "done" folder,
+          Repeats until pre-set settings are satisfied.    
     </details>
     <details>
       <summary>Investing Decisions Maker</summary>
