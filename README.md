@@ -55,7 +55,7 @@ Personal Utils represented as skripts or text files. As well as automation scrip
     </details>
     <details>
         <summary>Automat for Rewriting Documents</summary>
-          set:<br>
+          Set:<br>
           <ul>
             <li>folder</li> 
             <li>number of folders;</li>
@@ -63,7 +63,7 @@ Personal Utils represented as skripts or text files. As well as automation scrip
             <li>number of dates to be replaced</li>
             <li>are there files or folders that need to be skipped</li><br>
           </ul>
-          <br>The bot:<br>          
+          The bot:<br>          
           <ul>
             <li>Opens the folder,</li>
             <li>Opens the document,</li>
