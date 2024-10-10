@@ -35,7 +35,6 @@ Personal Utils represented as skripts or text files. As well as automation scrip
           Downloads the data for the selected month and sets it to the next month,<br>
           Repeats the process for each remaining year until all the data is donwloaded.<br>
           Alerts the user by logging into the bot's Facebook account and sending a message indicating that the database for the current doctor or dentist has been successfully downloaded. 
-
     </details>
     <details>
         <summary>Auto PDF Uploader To Wordpress</summary>
