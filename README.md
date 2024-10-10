@@ -26,41 +26,53 @@ Personal Utils represented as skripts or text files. As well as automation scrip
               Lay back and relax while the automat do it's job. He will send you a notification on your phone when he is ready.
             </li>
           </ol>
-          The bot:<br>
-          Opens the Chrome browser and configures its settings for downloading,<br>
-          Logs into the software,<br>
-          Navigates to the database,<br>
-          Sets the desired year,<br>
-          Sets the desired month,<br>
-          Downloads the data for the selected month and sets it to the next month,<br>
-          Repeats the process for each remaining year until all the data is donwloaded.<br>
-          Alerts the user by logging into the bot's Facebook account and sending a message indicating that the database for the current doctor or dentist has been successfully downloaded. 
+          <bt>The bot:<br>
+          <ul>
+            <li>Opens the Chrome browser and configures its settings for downloading,</li>
+            <li>Logs into the software,</li>
+            <li>Navigates to the database,</li>
+            <li>Sets the desired year,</li>
+            <li>Sets the desired month,</li>
+            <li>Downloads the data for the selected month and sets it to the next month,</li>
+            <li>Repeats the process for each remaining year until all the data is donwloaded.</li>
+            <li>Alerts the user by logging into the bot's Facebook account and sending a message indicating that the database for the current doctor or dentist has been successfully downloaded.</li>
+          </ul>
     </details>
     <details>
         <summary>Auto PDF Uploader To Wordpress</summary>
           Uploads PDF into a plugin, then imports the PDF into an elementor gadget and repeats.<br>
-          the bot:<br>
-          Opens the Chrome browser,<br>
-          Logs into the website,<br>
-          Navigates to the plugin "PDF Poster",<br>
-          Moves the first PDF file in a designated "done" folder,<br>
-          Uploads the file,
-          <br>Visits the specific location on the site,
-          <br>Accesses Elementor and places the PDF in the desired position,
-          <br>Repeats the process for each remaining PDF until they are all uploaded.
+          <br>The bot:<br>
+          <ul>
+            <li>Opens the Chrome browser,</li>
+            <li>Logs into the website,</li>
+            <li>Navigates to the plugin "PDF Poster",</li>
+            <li>Moves the first PDF file in a designated "done" folder,</li>
+            <li>Uploads the file,</li>
+            <li>Visits the specific location on the site,</li>
+            <li>Accesses Elementor and places the PDF in the desired position,</li>
+            <li>Repeats the process for each remaining PDF until they are all uploaded.</li>
+          </ul>
     </details>
     <details>
         <summary>Automat for Rewriting Documents</summary>
           set:<br>
-          folder; number of folders; number of files in folders; number of dates to be replaced; are there files or folders that need to be skipped;<br>
-          <br>the bot:<br>
-          Opens the folder,<br>
-          Opens the document,<br>
-          Updates the years<br>
-          (without changing other numeric non-year values),<br>
-          Saves and prints the file,<br>
-          Moves the completed folder in a designated "done" folder,<br>
-          Repeats until pre-set settings are satisfied.<br>
+          <ul>
+            <li>folder</li> 
+            <li>number of folders;</li>
+            <li>number of files in folders</li>
+            <li>number of dates to be replaced</li>
+            <li>are there files or folders that need to be skipped</li><br>
+          </ul>
+          <br>The bot:<br>          
+          <ul>
+            <li>Opens the folder,</li>
+            <li>Opens the document,</li>
+            <li>Updates the years</li>
+            <li>(without changing other numeric non-year values),</li>
+            <li>Saves and prints the file,</li>
+            <li>Moves the completed folder in a designated "done" folder,</li>
+            <li>Repeats until pre-set settings are satisfied.</li>
+          </ul>
     </details>
     <details>
       <summary>Investing Decisions Maker</summary>
